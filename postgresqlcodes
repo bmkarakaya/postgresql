@@ -1,0 +1,17 @@
+ CREATE TABLE employee (          #Created a table
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50),
+    birthday DATE,
+    email VARCHAR(100)
+);
+
+#Then added data from Mockaroo
+
+UPDATE employee                   #Updated 5 data
+SET first_name = 'Burak'
+	birthday = '1996-12-13'
+	email = 'asld@gmail.com'
+WHERE id = 1;
+
+DELETE FROM employee              #Deleted 5 data
+WHERE id BETWEEN 6 AND 10 
